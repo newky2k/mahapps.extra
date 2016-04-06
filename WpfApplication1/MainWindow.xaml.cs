@@ -39,6 +39,33 @@ namespace WpfApplication1
 
             lstDide.Items = its2;
 
+            var its3 = new List<AccordionMenuItem>()
+            {
+                new AccordionMenuItem() {Title = "Menu Item 3", Icon =  BitmapFrame.Create(asm) },
+                 new AccordionMenuItem() {Title = "Menu Item 4", Icon =  BitmapFrame.Create(asm) },
+
+            };
+
+            lstDide2.Items = its3;
+
+            lstDide.SelectedItemChanged += LstDide_SelectedItemChanged;
+            lstDide2.SelectedItemChanged += LstDide_SelectedItemChanged;
+        }
+
+        private void LstDide_SelectedItemChanged(object sender, AccordionMenuItem e)
+        {
+            if (e != null)
+            {
+                if (sender == lstDide)
+                {
+                    lstDide2.ClearSelection();
+                }
+                else
+                {
+                    lstDide.ClearSelection();
+                }
+            }
+
         }
     }
 

@@ -11,6 +11,7 @@ namespace MahApps.Extra.Controls
 {
     public class AccordionMenu : ContentControl
     {
+        
 
         public static readonly DependencyProperty ItemsProperty = DependencyProperty.Register(
             "Items",
@@ -19,12 +20,15 @@ namespace MahApps.Extra.Controls
             new PropertyMetadata(ItemsPropertyChanged));
 
 
+        public event EventHandler<AccordionMenuItem> SelectedItemChanged;
+
+        
         /// <summary>
         /// The name of the ExpanderButton template part.
         /// </summary>
         private const string ListMenuName = "ListMenu";
 
-        private ListView ListView;
+        private ListView List;
 
         public List<AccordionMenuItem> Items
         {
@@ -41,6 +45,14 @@ namespace MahApps.Extra.Controls
             }
         }
 
+        /// <summary>
+        /// Gets or sets the parent accordion item.
+        /// </summary>
+        /// <value>
+        /// The parent accordion item.
+        /// </value>
+        internal AccordionItem ParentAccordionItem { get; set; }
+
         public AccordionMenu()
         {
             var items = new List<AccordionMenuItem>();
@@ -52,9 +64,9 @@ namespace MahApps.Extra.Controls
         {
             var menu = dependencyObject as AccordionMenu;
 
-           if (menu.ListView != null)
+           if (menu.List != null)
             {
-                menu.ListView.ItemsSource = e.NewValue as List<AccordionItem>;
+                menu.List.ItemsSource = e.NewValue as List<AccordionItem>;
             }
         }
 
@@ -62,21 +74,40 @@ namespace MahApps.Extra.Controls
         {
             base.OnApplyTemplate();
 
-            ListView = this.GetTemplateChild(ListMenuName) as ListView;
+            List = this.GetTemplateChild(ListMenuName) as ListView;
 
-            ListView.SelectionChanged += OnSelectionChanged;
-            var items = this.GetValue(ItemsProperty) as List<AccordionMenuItem>;
+           
 
-            if (ListView != null)
+            if (List != null)
             {
-                ListView.ItemsSource = items;
+                List.SelectionChanged += OnSelectionChanged;
+                var items = this.GetValue(ItemsProperty) as List<AccordionMenuItem>;
+                List.ItemsSource = items;
             }
 
         }
 
+        /// <summary>
+        /// Clears the selection.
+        /// </summary>
+        public void ClearSelection()
+        {
+            if (List != null)
+            {
+                List.SelectedItem = null;
+            }
+        }
+
         private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Console.WriteLine("");
+            if (this.SelectedItemChanged != null)
+            {
+                AccordionMenuItem selectedItem = (e.AddedItems.Count > 0) ? (AccordionMenuItem)e.AddedItems[0] : null;
+
+                this.SelectedItemChanged(this, selectedItem);
+            }
+            
+
         }
     }
 }

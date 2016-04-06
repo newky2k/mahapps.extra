@@ -55,6 +55,10 @@
                 <mahappsextra:AccordionMenu x:Name="lstDide" Items="{Binding Items}">
                 </mahappsextra:AccordionMenu>
             </mahappsextra:AccordionItem>
+            <mahappsextra:AccordionItem Header="Test 2">
+                <mahappsextra:AccordionMenu x:Name="lstDide2" Items="{Binding Items}">
+                </mahappsextra:AccordionMenu>
+            </mahappsextra:AccordionItem>
         </mahappsextra:Accordion>
     </Grid>
 </Metro:MetroWindow>
