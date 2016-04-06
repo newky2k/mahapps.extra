@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{E13D0BC8-D59F-4488-AB7F-3C6151F030C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9ED97B84-DC12-4202-8303-C20C176355F8}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahAppsExtraSample", "WpfApplication1\MahAppsExtraSample.csproj", "{1C6A3FEA-8290-4379-B631-1229A84CF36F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.Extra", "MahApp.Extra\MahApps.Extra.csproj", "{821F8AF2-3497-44F8-9F83-ECB86570EFD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C6A3FEA-8290-4379-B631-1229A84CF36F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6A3FEA-8290-4379-B631-1229A84CF36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6A3FEA-8290-4379-B631-1229A84CF36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6A3FEA-8290-4379-B631-1229A84CF36F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{821F8AF2-3497-44F8-9F83-ECB86570EFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821F8AF2-3497-44F8-9F83-ECB86570EFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821F8AF2-3497-44F8-9F83-ECB86570EFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821F8AF2-3497-44F8-9F83-ECB86570EFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
