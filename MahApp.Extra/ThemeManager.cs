@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace MahApps.Extra
 {
-    public class ThemeManager
+    public class ExtrasThemeManager
     {
         private static readonly Uri CommonUiDictionaryUri = new Uri("/MahApps.Extra;component/Themes/Generic.xaml", UriKind.Relative);
 
@@ -27,3 +27,4 @@ namespace MahApps.Extra
 
     }
 }
+

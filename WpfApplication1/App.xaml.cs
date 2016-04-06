@@ -1,4 +1,5 @@
-﻿using MahApps.Extra;
+﻿
+using MahApps.Extra;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -19,7 +20,7 @@ namespace WpfApplication1
         {
             base.OnStartup(e);
 
-            ThemeManager.RegisterThemes(this.Resources);
+            ExtrasThemeManager.RegisterThemes(this.Resources);
         }
     }
 }
