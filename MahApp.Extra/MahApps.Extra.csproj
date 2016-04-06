@@ -32,10 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Elysium, Version=2.0.1042.4, Culture=neutral, PublicKeyToken=afa220db249e5b15, processorArchitecture=MSIL">
-      <HintPath>..\packages\Elysium.Theme.2.0.4\lib\net45\Elysium.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="MahApps.Metro, Version=1.2.4.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.2.4.0\lib\net45\MahApps.Metro.dll</HintPath>
       <Private>True</Private>
@@ -86,7 +82,13 @@
     <Compile Include="Controls\BorderFix.cs" />
     <Compile Include="Controls\ResourceDictionaryExtensions.cs" />
     <Compile Include="Controls\SharedResourceDictionary.cs" />
+    <Compile Include="Converters\DoubleToThicknessConverter.cs" />
     <Compile Include="Data\AccordionMenuItem.cs" />
+    <Compile Include="Parameters\General.cs" />
+    <Compile Include="Parameters\Helpers\BoxingHelper.cs" />
+    <Compile Include="Parameters\Helpers\DoubleUtil.cs" />
+    <Compile Include="Parameters\Helpers\ThicknessUtil.cs" />
+    <Compile Include="Parameters\Helpers\ValidationHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

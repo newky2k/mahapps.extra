@@ -2,9 +2,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:controls="clr-namespace:MahApps.Extra.Controls"
                      xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
-                    xmlns:params="http://schemas.codeplex.com/elysium/params"
+                    xmlns:params="clr-namespace:MahApps.Extra.Parameters"
                     xmlns:system="clr-namespace:System;assembly=mscorlib"
-                    xmlns:elysiumConverters="clr-namespace:Elysium.Converters;assembly=Elysium">
+                    xmlns:converters="clr-namespace:MahApps.Extra.Converters">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
         <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
@@ -24,7 +24,7 @@
     <SolidColorBrush x:Key="MiddleLightBrush" options:Freeze="True" Color="{DynamicResource MiddleLightColor}" />
     <SolidColorBrush x:Key="LowlightBrush" options:Freeze="True" Color="{DynamicResource LowlightColor}" />
 
-    <elysiumConverters:DoubleToThicknessConverter x:Key="DoubleToThicknessConverter" />
+    <converters:DoubleToThicknessConverter x:Key="DoubleToThicknessConverter" />
     <Geometry x:Key="ArrowHeadDownGeometry">F1M181.297,177.841L181.205,177.746 181.385,177.563 202.804,156.146 202.804,135.07 178.497,159.373 170.847,167.026 170.666,167.205 163.107,159.653 138.804,135.345 138.804,156.42 160.219,177.841 170.76,188.379 181.297,177.841z</Geometry>
     <Geometry x:Key="Export1Geometry">M45.963548,8.269645L62.665147,25.065546 45.963548,39.871244 45.963548,31.963644C45.963548,31.963644 17.120617,24.075571 9.909945,39.871244 9.9099454,35.922571 12.530199,16.167482 45.963548,16.167483z M0,0L41.778571,0 41.778571,4.1795139 41.778571,8.3590277 37.598714,8.3590277 37.598714,4.1795139 4.1798577,4.1795139 4.1798577,45.954649 37.598714,45.954649 37.598714,41.775137 41.778571,41.775137 41.778571,45.954649 41.778571,50.134165 37.598714,50.134165 0,50.134165 0,45.954649 0,4.1795139z</Geometry>
 
