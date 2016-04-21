@@ -9,4 +9,4 @@ It will use the highlights from the selected MahApps theme.
 
  - Not all of the themes values pull through and apply
  - There are some binding issues with the AccordionMenu
- - 
+ 
