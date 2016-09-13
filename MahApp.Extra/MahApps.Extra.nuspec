@@ -14,7 +14,7 @@
     
     Additionally an AccordianMenu class to make it easier to create menus
     </description>
-    <releaseNotes>Initial Release</releaseNotes>
+    <releaseNotes>Added SelectedIndex and SelectedItem</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>MahApps Accordion</tags>
   </metadata>
