@@ -88,6 +88,53 @@ namespace MahApps.Extra.Controls
         }
 
         /// <summary>
+        /// Gets or sets the index of the selected.
+        /// </summary>
+        /// <value>The index of the selected.</value>
+        public int SelectedIndex
+        {
+            get
+            {
+                if (List != null)
+                {
+                    return List.SelectedIndex;
+                }
+
+                return -1;
+            }
+            set
+            {
+                if (List != null)
+                {
+                    List.SelectedIndex = value;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the selected item.
+        /// </summary>
+        /// <value>The selected item.</value>
+        public object SelectedItem
+        {
+            get
+            {
+                if (List != null)
+                {
+                    return List.SelectedItem;
+                }
+
+                return -1;
+            }
+            set
+            {
+                if (List != null)
+                {
+                    List.SelectedItem = value;
+                }
+            }
+        }
+        /// <summary>
         /// Clears the selection.
         /// </summary>
         public void ClearSelection()

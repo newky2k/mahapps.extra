@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:WpfApplication1"
         xmlns:Metro="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="640" Width="800"
+        Title="MainWindow" Height="640" Width="800" Loaded="MetroWindow_Loaded"
         xmlns:data="clr-namespace:MahApps.Extra.Data;assembly=MahApps.Extra">
     <Metro:MetroWindow.Resources>
         <ResourceDictionary>
@@ -52,7 +52,7 @@
         </mahappsextra:Accordion>
         <mahappsextra:Accordion Grid.Column="2">
             <mahappsextra:AccordionItem Header="Test">
-                <mahappsextra:AccordionMenu x:Name="lstDide" Items="{Binding Items}">
+                <mahappsextra:AccordionMenu x:Name="lstDide" Items="{Binding FirstMenu}">
                 </mahappsextra:AccordionMenu>
             </mahappsextra:AccordionItem>
             <mahappsextra:AccordionItem Header="Test 2">
