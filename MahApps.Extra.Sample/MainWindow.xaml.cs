@@ -24,11 +24,11 @@ namespace MahApps.Extra.Sample
     /// </summary>
     public partial class MainWindow : MetroWindow, INotifyPropertyChanged
     {
-        public ObservableCollection<AccordionMenuItem> firstMenu;
+        public List<AccordionMenuItem> firstMenu;
 
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
-        public ObservableCollection<AccordionMenuItem> FirstMenu
+        public List<AccordionMenuItem> FirstMenu
         {
             get
             {
@@ -53,14 +53,14 @@ namespace MahApps.Extra.Sample
             var rsNanme = "MahApps.Extra.Sample.Assets.box.png";
             var asm = this.GetType().Assembly.GetManifestResourceStream(rsNanme);
 
-            var its = new List<AccordionMenuItem>()
-            {
-                new AccordionMenuItem() {Title = "Menu Item 1", Icon =  BitmapFrame.Create(asm) },
-                 new AccordionMenuItem() {Title = "Menu Item 2", Icon =  BitmapFrame.Create(asm) },
+            //var its = new List<AccordionMenuItem>()
+            //{
+            //    new AccordionMenuItem() {Title = "Menu Item 1", Icon =  BitmapFrame.Create(asm) },
+            //     new AccordionMenuItem() {Title = "Menu Item 2", Icon =  BitmapFrame.Create(asm) },
 
-            };
+            //};
 
-            lstView.ItemsSource = its;
+            //lstView.ItemsSource = its;
 
             var its2 = new List<AccordionMenuItem>()
             {
@@ -69,8 +69,7 @@ namespace MahApps.Extra.Sample
 
             };
 
-            lstDide.Items = its2;
-
+            FirstMenu = its2;
 
 
             var its3 = new List<AccordionMenuItem>()

@@ -11,13 +11,9 @@ namespace MahApps.Extra.Controls
 {
     public class AccordionMenu : ContentControl
     {
-        
 
-        public static readonly DependencyProperty ItemsProperty = DependencyProperty.Register(
-            "Items",
-            typeof(List<AccordionMenuItem>),
-            typeof(AccordionMenu),
-            new PropertyMetadata(ItemsPropertyChanged));
+
+        public static readonly DependencyProperty ItemsProperty = DependencyProperty.Register("Items",typeof(List<AccordionMenuItem>), typeof(AccordionMenu), new FrameworkPropertyMetadata(new List<AccordionMenuItem>(), FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, ItemsPropertyChanged));
 
 
         public event EventHandler<AccordionMenuItem> SelectedItemChanged;
@@ -30,11 +26,11 @@ namespace MahApps.Extra.Controls
 
         private ListView List;
 
-        public List<AccordionMenuItem> Items
+        public IEnumerable<AccordionMenuItem> Items
         {
             get
             {
-                return this.GetValue(ItemsProperty) as List<AccordionMenuItem>;
+                return this.GetValue(ItemsProperty) as IEnumerable<AccordionMenuItem>;
             }
 
             set
@@ -66,7 +62,15 @@ namespace MahApps.Extra.Controls
 
            if (menu.List != null)
             {
-                menu.List.ItemsSource = e.NewValue as List<AccordionItem>;
+                if (e.NewValue != null)
+                {
+                    menu.List.ItemsSource = e.NewValue as IEnumerable<AccordionMenuItem>;
+                }
+                else if (e.OldValue != null)
+                    {
+                    menu.List.ItemsSource = e.OldValue as IEnumerable<AccordionMenuItem>;
+                }
+                
             }
         }
 
@@ -75,8 +79,6 @@ namespace MahApps.Extra.Controls
             base.OnApplyTemplate();
 
             List = this.GetTemplateChild(ListMenuName) as ListView;
-
-           
 
             if (List != null)
             {
