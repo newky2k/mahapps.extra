@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{E13D0BC8-D59F-4488-AB7F-3C6151F030C4}"
 EndProject
@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9ED97B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahAppsExtraSample", "WpfApplication1\MahAppsExtraSample.csproj", "{1C6A3FEA-8290-4379-B631-1229A84CF36F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.Extra", "MahApp.Extra\MahApps.Extra.csproj", "{821F8AF2-3497-44F8-9F83-ECB86570EFD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.Extra.Old", "MahApp.Extra.Old\MahApps.Extra.Old.csproj", "{821F8AF2-3497-44F8-9F83-ECB86570EFD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.Extra", "MahApps.Extra\MahApps.Extra.csproj", "{E8A306BB-1076-41DD-9BB5-1E47E876AD18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,8 +32,15 @@ Global
 		{821F8AF2-3497-44F8-9F83-ECB86570EFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{821F8AF2-3497-44F8-9F83-ECB86570EFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{821F8AF2-3497-44F8-9F83-ECB86570EFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A306BB-1076-41DD-9BB5-1E47E876AD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A306BB-1076-41DD-9BB5-1E47E876AD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A306BB-1076-41DD-9BB5-1E47E876AD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A306BB-1076-41DD-9BB5-1E47E876AD18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADC7453F-8EA0-400C-A14F-F5AB98B96BA5}
 	EndGlobalSection
 EndGlobal

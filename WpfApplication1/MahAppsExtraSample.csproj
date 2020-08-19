@@ -108,9 +108,9 @@
     <EmbeddedResource Include="Assets\box.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MahApp.Extra\MahApps.Extra.csproj">
+    <ProjectReference Include="..\MahApp.Extra.Old\MahApps.Extra.Old.csproj">
       <Project>{821f8af2-3497-44f8-9f83-ecb86570efd1}</Project>
-      <Name>MahApps.Extra</Name>
+      <Name>MahApps.Extra.Old</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
