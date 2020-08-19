@@ -8,7 +8,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
         <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
-        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Color x:Key="ContrastColor" options:Freeze="True">#FFFFFFFF</Color>
@@ -31,7 +30,7 @@
 
     <Style x:Key="{x:Static SystemParameters.FocusVisualStyleKey}" TargetType="{x:Type Control}">
         <Setter Property="Background" Value="{DynamicResource TransparentBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource AccentColorBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource MahApps.Brushes.Accent}"/>
         <Setter Property="BorderThickness" Value="{Binding RelativeSource={RelativeSource Self}, Path=(params:General.BoldThickness), Mode=OneWay}" />
         <Setter Property="Margin" Value="-2"/>
         <Setter Property="SnapsToDevicePixels" Value="True"/>
@@ -593,8 +592,8 @@
         <Setter Property="TextOptions.TextFormattingMode" Value="Display"/>
         <Setter Property="TextOptions.TextRenderingMode" Value="ClearType"/>
         <Setter Property="RenderOptions.ClearTypeHint" Value="Enabled"/>
-        <Setter Property="Background" Value="{DynamicResource AccentColorBrush}"/>
-        <Setter Property="BorderBrush" Value="{DynamicResource AccentColorBrush}"/>
+        <Setter Property="Background" Value="{DynamicResource MahApps.Brushes.Accent}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource MahApps.Brushes.Accent}"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Foreground" Value="{DynamicResource ContrastBrush}"/>
         <Setter Property="FontSize" Value="{Binding RelativeSource={RelativeSource Self}, Path=(params:General.ContentFontSize), Mode=OneWay}"/>
@@ -1052,7 +1051,7 @@
         </Setter>
     </Style>
     <Style TargetType="{x:Type controls:AccordionMenu}">
-        <Setter Property="Background" Value="{DynamicResource AccentColorBrush}"/>
+        <Setter Property="Background" Value="{DynamicResource MahApps.Brushes.Accent}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type controls:AccordionMenu}">

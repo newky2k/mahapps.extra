@@ -1,10 +1,10 @@
-﻿namespace MahApps.Extra.Controls
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows;
 
+namespace MahApps.Extra.Controls
+{
     /// <summary>
     /// Loads singleton instance of ResourceDictionary to current scope;
     /// </summary>
