@@ -1,11 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MahApps.Extra", "MahApps.Extra\MahApps.Extra.csproj", "{E8A306BB-1076-41DD-9BB5-1E47E876AD18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.Extra.Sample", "MahApps.Extra.Sample\MahApps.Extra.Sample.csproj", "{BE9C45F0-5E5F-4BCC-9799-8C632B04DFA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MahApps.Extra.Sample", "MahApps.Extra.Sample\MahApps.Extra.Sample.csproj", "{BE9C45F0-5E5F-4BCC-9799-8C632B04DFA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".ci", ".ci", "{7EB7A0EA-84A9-4ECD-8FE2-8ADB56D54990}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines-mergetest.yml = azure-pipelines-mergetest.yml
+		azure-pipelines-release.yml = azure-pipelines-release.yml
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
