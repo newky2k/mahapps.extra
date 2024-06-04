@@ -1,9 +1,11 @@
 # mahapps.accordian
-Accordian for MahApps
+WPF Accordian for MahApps
 
 Initially this is simply a a port of the Accordion controller from Elysium [http://elysium.codeplex.com/](http://elysium.codeplex.com/) to MahApps
 
 It will use the highlights from the selected MahApps theme.
+
+Works with .NET Framework 4.5.2 and above and .NET 6 and 8
 
 ### Known Issues
 
