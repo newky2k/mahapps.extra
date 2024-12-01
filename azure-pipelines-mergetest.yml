@@ -12,16 +12,23 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  netVersion: '9.x'
 
 steps:
 
 - task: NuGetToolInstaller@1
   displayName: Install Latest Nuget
 
-- task: NuGetCommand@2
-  displayName: Nuget Restore
+- task: UseDotNet@2
+  displayName: 'Install .NET sdk'
   inputs:
-    restoreSolution: '$(solution)'
+    packageType: 'sdk'
+    version: $(netVersion)
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(solution)'
   
 - task: DotNetCoreCLI@2
   displayName: dotnet build
