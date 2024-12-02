@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net452; net6.0-windows7.0; net8.0-windows7.0;</TargetFrameworks>
+		<TargetFrameworks>net452;net6.0-windows7.0;net8.0-windows7.0;net9.0-windows7.0;</TargetFrameworks>
 		<UseWPF>true</UseWPF>
 		<RootNamespace>MahApps.Extra</RootNamespace>
 		<AssemblyName>MahApps.Extra</AssemblyName>
@@ -20,7 +20,7 @@
 		<PackageProjectUrl>https://github.com/newky2k/mahapps.extra</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/newky2k/mahapps.extra</RepositoryUrl>
 		<RepositoryType>github</RepositoryType>
-		<PackageReleaseNotes>Updated to Latest MahApps and added support for .NET 6.0 and .NET 8.0</PackageReleaseNotes>
+		<PackageReleaseNotes>Added support for .NET 9.0</PackageReleaseNotes>
 		<AssemblyVersion>2.0.0.0</AssemblyVersion>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
