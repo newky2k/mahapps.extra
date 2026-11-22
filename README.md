@@ -5,7 +5,7 @@ Initially this is simply a a port of the Accordion controller from Elysium [http
 
 It will use the highlights from the selected MahApps theme.
 
-Works with .NET Framework 4.5.2 and above and .NET 6 and 8
+Works with .NET Framework 4.5.2 and above and .NET 6, 8, 9, 10 and 11
 
 ### Known Issues
 
