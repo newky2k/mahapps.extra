@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MahApps.Extra.Sample", "Mah
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".ci", ".ci", "{7EB7A0EA-84A9-4ECD-8FE2-8ADB56D54990}"
 	ProjectSection(SolutionItems) = preProject
-		azure-pipelines-mergetest.yml = azure-pipelines-mergetest.yml
-		azure-pipelines-release.yml = azure-pipelines-release.yml
 		README.md = README.md
 	EndProjectSection
 EndProject
